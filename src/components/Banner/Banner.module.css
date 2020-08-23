@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1531185964465-47a4e9b1b4f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+.contentBanner {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    -moz-box-align: center;
+    align-items: center;
+    justify-content: stretch;
+    gap: 60px;
+}
+
+.contentBanner h1 {
+    padding-left: 3rem;
+    font-family: roboto;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.subtitleBanner {
+    font-size: 30px;
+    line-height: 1.4em;
+    color: rgb(87, 87, 125);
+    margin-left: 3rem;
+}
+
+.textBanner {
+    font-size: 22px;
+    line-height: 1.2em;
+    color: rgb(87, 87, 125);
+    margin-left: 3rem;
+}
+
+.textContainer {
+    width: 40%;
+}
+
+
+@media (max-width: 500px) {
+    .textContainer {
+        width: 15%;
+    }
+
+    .textBanner {
+        visibility: hidden;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../UI/NavBar/NavBar';
 import Destinos from '../../components/Destinos/Destinos';
+import Banner from '../Banner/Banner';
 import axios from 'axios';
 import classes from './TravelerHelper.module.css';
 
@@ -27,6 +28,7 @@ class TravelerHelper extends Component {
     return (
       <div>
         <NavBar />
+        <Banner />
         <Destinos destinos={this.state.destinos} />
       </div>
     );
